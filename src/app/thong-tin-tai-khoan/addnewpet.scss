@@ -1,0 +1,142 @@
+@import "../../style/variable";
+@import "../../style/base";
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: none;
+  &.open {
+    display: block;
+  }
+}
+.add-new-pet-pop-up {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  width: 1140px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 116px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+  &.open {
+    display: block;
+  }
+  .close-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 0 0;
+    cursor: pointer;
+    &:hover {
+      background-color: $BROWN_500;
+      svg {
+        color: white;
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 40px;
+    color: $BROWN_500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .col-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  .input-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    input {
+      width: 328px;
+      height: 40px;
+      padding: 0 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      &:focus {
+        border: 1px solid $BROWN_500;
+        box-shadow: 0 0 8px rgba(145, 26, 30, 0.25);
+      }
+    }
+  }
+  .input-group {
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  .col-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 212px;
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    button {
+      margin-top: 20px;
+      width: 100px;
+      height: 40px;
+      border-radius: 10px;
+      color: white;
+      background-color: $BROWN_500;
+      border: none;
+    }
+  }
+  .col-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .btn {
+      width: 212px;
+      height: 40px;
+      cursor: pointer;
+    }
+    .btn-cancel {
+      background-color: transparent;
+      &:hover {
+        background-color: $BROWN_500;
+        color: white;
+      }
+    }
+  }
+}
+.ant-select-selector {
+  border: none;
+}
+.list-pets {
+  p {
+    color: $BROWN_500;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+.add-new-pet-btn {
+  width: 444px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  background-color: $BROWN_500;
+  color: white;
+}

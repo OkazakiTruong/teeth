@@ -1,0 +1,42 @@
+@import "../../style/variable";
+@import "../../style/base";
+
+.tiny-article-item {
+  height: 133px;
+  width: 328px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  img {
+    width: 133px;
+    height: 133px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .content {
+    padding: 8px 8px 8px 0px;
+  }
+  h3 {
+    font-size: 14px;
+    color: $BROWN_500;
+    margin-bottom: 8px;
+  }
+  .article-author-time {
+    img {
+      width: 12px;
+      height: 12px;
+    }
+
+    p {
+      color: $BROWN_500;
+      font-size: 10px;
+    }
+    .article-item {
+      display: flex;
+      margin-bottom: 6px;
+      gap: 6px;
+    }
+  }
+}

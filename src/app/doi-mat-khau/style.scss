@@ -1,0 +1,181 @@
+@import "../../style/variable";
+@import "../../style/base";
+
+main {
+  padding-bottom: 60px;
+  background-color: $RED_50;
+}
+
+.wrapper {
+  width: 1372px;
+  height: 607px;
+  margin: 60px auto 0 auto;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.25);
+  .img {
+    width: 676px;
+    background-image: url("/img/bg-login.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    .overlay {
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .content {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 350px;
+        height: 229px;
+      }
+      h3 {
+        font-size: 40px;
+        color: white;
+      }
+    }
+  }
+  .form-wrapper {
+    width: 676px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .form {
+      margin-top: 30px;
+      width: 444px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 32px;
+      color: $BROWN_500;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    input {
+      height: 55px;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 16px;
+      padding: 0px 20px;
+      &:focus {
+        border: 1px solid $BROWN_500;
+      }
+    }
+    input[type="password"] {
+      padding-right: 40px;
+    }
+    .input-err {
+      border-color: $RED_500;
+    }
+    .error {
+      font-size: 14px;
+      color: $RED_500;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      row-gap: 13px;
+    }
+    .option-group {
+      display: flex;
+      justify-content: space-between;
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: $BROWN_500;
+      }
+      .ant-checkbox-wrapper:hover .ant-checkbox-checked > .ant-checkbox-inner {
+        background-color: $BROWN_300;
+      }
+      .ant-checkbox-wrapper {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .ant-checkbox-inner {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        border: 1px solid $BROWN_500;
+        &:hover {
+          background-color: $BROWN_500 !important;
+        }
+        &::after {
+          opacity: 1;
+          transform: rotate(45deg) scale(1.4) translate(-50%, -50%);
+          transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+        }
+      }
+      a {
+        color: $BROWN_500;
+        text-decoration: underline;
+      }
+    }
+    .custom-eye {
+      position: relative;
+      height: fit-content;
+      img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+    button {
+      width: 100%;
+      height: 60px;
+      background-color: $BROWN_500;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 900;
+      color: white;
+      img {
+        width: 30px;
+      }
+      cursor: pointer;
+      &:hover {
+        background-color: $BROWN_400;
+      }
+    }
+    .other-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 444px;
+      color: rgba(0, 0, 0, 0.4);
+      .line {
+        width: 188px;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+    .social-option {
+      display: flex;
+      gap: 26px;
+    }
+    .other-option-link {
+      a {
+        color: $BROWN_500;
+        font-weight: 600;
+      }
+    }
+  }
+}

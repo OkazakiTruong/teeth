@@ -1,0 +1,21 @@
+@import "../style/variable";
+@import "../style/base";
+// custom scroll bar
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient($BROWN_500, $RED_500);
+  // border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background-image: linear-gradient(to right, $BROWN_500, $RED_500);
+  // border-radius: 10px;
+}

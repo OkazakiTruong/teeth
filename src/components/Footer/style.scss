@@ -1,0 +1,84 @@
+@import "../../style/variable";
+footer {
+  display: block;
+  width: 100vw;
+  height: 424px;
+  background-color: $BROWN_500;
+  padding: 20px 0;
+}
+.row {
+  width: 1372px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+.row-1 {
+  align-items: flex-start;
+}
+.logo {
+  width: 140px;
+  grid-column: 2/5;
+}
+.working-time {
+  grid-column: 6/10;
+  position: relative;
+  font-size: 24px;
+  padding-bottom: 20px;
+  &::after {
+    content: "";
+    width: 137px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+.contact-info {
+  position: relative;
+  grid-column: 10/13;
+  font-size: 24px;
+  padding-bottom: 20px;
+  &::after {
+    content: "";
+    width: 137px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+.about {
+  grid-column: 1/5;
+  text-align: justify;
+}
+.working-time-more {
+  grid-column: 6/10;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-info-more {
+  grid-column: 10/13;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer-bottom {
+  width: 1372px;
+  margin: 0 auto;
+  margin-top: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

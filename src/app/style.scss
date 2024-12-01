@@ -1,0 +1,203 @@
+@import "../style/variable";
+@import "../style/base";
+main {
+  margin-bottom: 40px;
+}
+.banner {
+  width: 100vw;
+  height: 774px;
+  background-image: url("/img/dentis/banner.png");
+  background-size: cover;
+  position: relative;
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+}
+.banner-content {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 160px 0px 0px 116px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  .group-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+.banner-heading {
+  width: fit-content;
+  font-size: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+  &::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.banner-main-heading {
+  font-size: 80px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
+}
+.banner-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  gap: 10px;
+  color: white;
+  text-transform: uppercase;
+  width: 212px;
+  height: 70px;
+  background-color: #60b8d6;
+  border-radius: 10px;
+  .el_group_brown {
+    display: none;
+  }
+  &:hover {
+    background-color: #60b8d6;
+    color: white;
+  }
+  &:hover .el_group_brown {
+    display: block;
+  }
+}
+.banner-button:nth-child(2) {
+  background-color: hsla(0, 35%, 93%, 0.8);
+  color: #60b8d6;
+  &:hover {
+    background-color: #60b8d6;
+    color: white;
+  }
+}
+
+.booking-list {
+  width: 1372px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.about-section {
+  .section-content {
+    width: 1372px;
+    height: 719px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+  }
+  .left {
+    width: 676px;
+    border-radius: 10px;
+    background-image: url("/img/dentis/gioithieu1.png");
+    background-size: cover;
+  }
+  .right {
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      text-align: justify;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #60b8d6;
+  }
+  .mission-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .about-img {
+    position: relative;
+    height: 178px;
+    background-size: cover;
+    background-image: url("/img/dentis/gioithieu2.png");
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+    }
+    .img-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      h3 {
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+    .img-content-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.our-service-section {
+  .our-service-container {
+    width: 1372px;
+    margin: 0 auto;
+  }
+}
+.doctor-section {
+  .doctor-container {
+    width: 1372px;
+    margin: 0 auto;
+  }
+}
+
+.watch-more {
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 169px;
+  height: 47px;
+  background-color: #60b8d6;
+  color: white;
+  border-radius: 99px;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $RED_500;
+  }
+}

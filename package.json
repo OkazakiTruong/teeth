@@ -1,0 +1,32 @@
+{
+  "name": "petpal_user",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.6",
+    "@emailjs/browser": "^4.3.3",
+    "@next/font": "^14.2.1",
+    "antd": "^5.16.1",
+    "dayjs": "^1.11.10",
+    "emailjs": "^4.0.3",
+    "embla-carousel-autoplay": "^8.0.1",
+    "embla-carousel-react": "^8.0.1",
+    "lodash": "^4.17.21",
+    "next": "^14.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-toastify": "^10.0.5",
+    "sass": "^1.72.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4"
+  }
+}

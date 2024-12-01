@@ -1,0 +1,39 @@
+@import "../../style/variable";
+@import "../../style/base";
+
+main {
+  margin-bottom: 60px;
+}
+form {
+  width: 908px;
+  margin: 0 auto;
+  input {
+    height: 51px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 8px;
+    &:focus {
+      border: 1px solid $BROWN_500;
+      box-shadow: 0 0 8px 4px rgba(145, 26, 30, 0.25);
+    }
+  }
+  button {
+    width: 328px;
+    height: 53px;
+    border: none;
+    border-radius: 10px;
+    background-color: $BROWN_500;
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background-color: $RED_600;
+    }
+  }
+  .error {
+    margin-top: 8px;
+    color: $RED_600;
+  }
+}

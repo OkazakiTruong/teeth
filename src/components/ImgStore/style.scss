@@ -1,0 +1,70 @@
+@import "../../style/variable";
+.img-store {
+  width: 1372px;
+  margin: 0 auto;
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 220px;
+      height: 55px;
+      background-color: transparent;
+      border: none;
+      color: $BROWN_500;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      &:not(.active):hover {
+        background-color: transparent;
+        color: $RED_500;
+      }
+    }
+    .btn.active {
+      background-color: $BROWN_500;
+      color: white;
+    }
+  }
+}
+.img-store-item {
+  width: 328px;
+  height: 328px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover .hidden {
+    display: block;
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .hidden {
+    display: none;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    inset: 0;
+  }
+  .img-name {
+    width: max-content;
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+  }
+}
+.list-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

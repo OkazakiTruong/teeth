@@ -1,0 +1,45 @@
+@import "../../style/variable";
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  display: flex;
+  gap: 20px;
+  min-width: 100%;
+  padding-bottom: 10px;
+}
+.dot-list {
+  display: flex;
+  width: fit-content;
+  margin: 20px auto 0px auto;
+  gap: 10px;
+  .dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 99px;
+    // border: 2px solid $BROWN_500;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: $BROWN_300;
+      border-radius: 99px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .dot-active {
+    position: relative;
+    border: 2px solid $BROWN_500;
+    &::after {
+      background-color: $BROWN_500;
+    }
+  }
+}

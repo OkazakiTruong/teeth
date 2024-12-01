@@ -1,0 +1,60 @@
+@import "../../style/variable";
+.doctor-item {
+  width: 444px;
+  height: 523px;
+  .doctor-wrapper {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    &:hover .hidden {
+      display: flex;
+    }
+  }
+
+  .doctor-img {
+    height: 366px;
+    position: relative;
+    & > img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .doctor-contact {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transform: translateY(50%);
+  }
+
+  .contact-item {
+    width: 60px;
+    height: 60px;
+    background-color: $BROWN_500;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 24px;
+    }
+  }
+  .hidden {
+    display: none;
+    &:hover {
+      background-color: $RED_500;
+    }
+  }
+  .doctor-info {
+    height: 157px;
+    padding: 50px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h3 {
+      font-size: 24px;
+      color: $BROWN_500;
+    }
+  }
+}
