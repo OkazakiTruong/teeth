@@ -6,6 +6,7 @@ import {
   CaretDownOutlined,
   DownOutlined,
   SearchOutlined,
+  CalendarOutlined
 } from "@ant-design/icons";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -70,6 +71,9 @@ export const Header = () => {
             </div>
             {loginUser ? (
               <>
+                <div>
+                <a href="/dat-lich" className="calendar-icon"><CalendarOutlined /></a>
+                </div>
                 <div
                   className="icon-bell"
                   onClick={() => {
@@ -143,6 +147,9 @@ export const Header = () => {
               </>
             ) : (
               <div className="btn-group">
+                <div>
+                  <a href="/dat-lich" className="calendar-icon"><CalendarOutlined /></a>
+                </div>
                 <a href="/dang-ky" className="btn">
                   Đăng ký
                 </a>
@@ -352,7 +359,7 @@ export const Header = () => {
               </a>
             </li>
             <li className="sub-nav-item">
-              <a href="#">Điều trị sâu răng</a>
+              <a href="/bang-gia/dieu-tri-sau-rang">Điều trị sâu răng</a>
             </li>
             <li className="sub-nav-item">
               <a href="#">Trám răng</a>

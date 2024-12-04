@@ -217,7 +217,7 @@ export default function Page() {
             <div className="option-group">
               <Checkbox onChange={() => {}}>
                 Đồng ý với các <Link href="/dieu-khoan">điều khoản</Link> của
-                Petpals
+                Dental Clinic
               </Checkbox>
             </div>
             <button>

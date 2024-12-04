@@ -538,7 +538,7 @@ export default function StepItem({ step, changeCurrent, loginUser }) {
           <span style={{ fontSize: "24px" }}>{currentBooking.id}</span>
         </p>
         <p style={{ marginBottom: "30px" }}>
-          Mọi thắc mắc xin hãy liên hệ tới hotline (0977354956) của Petpals để
+          Mọi thắc mắc xin hãy liên hệ tới hotline (0977354956) của Dental Clinic để
           được hỗ trợ sớm nhất nhé !
         </p>
 
