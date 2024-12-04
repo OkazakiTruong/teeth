@@ -298,10 +298,7 @@ export default function Home() {
               <h3>SỨ MỆNH CỦA CHÚNG TÔI</h3>
               <div className="mission-item">
                 <p>
-                  Petpals luôn mang đến những dịch vụ chất lượng, uy tín, chuyên
-                  nghiệp. Là địa chỉ tin cậy để khách hàng đồng hành trong hành
-                  trình nuôi dưỡng, yêu thương và chăm sóc các bạn thú cưng của
-                  mình.
+                  Trở thành đơn vị nha khoa dẫn đầu về chất lượng dịch vụ chăm sóc sức khỏe răng miệng tại Việt Nam. Chúng tôi tự hào với đội ngũ bác sĩ giỏi, giàu kinh nghiệm, cam kết điều trị tận tâm và đáp ứng mọi nhu cầu của khách hàng với hiệu quả cao nhất.
                 </p>
               </div>
               <div className="mission-item">
