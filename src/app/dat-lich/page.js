@@ -53,10 +53,10 @@ export default function Page() {
         <img src="/icon/iconamoon_arrow-right-2.svg" alt="" />
         <p>Đặt lịch</p>
         <img src="/icon/iconamoon_arrow-right-2.svg" alt="" />
-        <p>Spa-Grooming</p>
+        <p>Khám</p>
       </div>
       <section className="booking-section">
-        <div className="section-heading">ĐẶT LỊCH Spa-Grooming</div>
+        <div className="section-heading">ĐẶT LỊCH KHÁM</div>
         <div className="booking-wrapper">
           <Steps
             style={{ marginBottom: "60px" }}

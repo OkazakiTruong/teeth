@@ -18,14 +18,14 @@ const listBookingItem = [
     name: "Đặt lịch chăm sóc răng miệng",
     title:
       "Tại Dental Clinic, mọi quy trình đều đảm bảo theo tiêu chuẩn quốc tế, từ thăm khám, tư vấn đến phác đồ điều trị. ",
-    link: "/dat-lich/spa-grooming",
+    link: "/dat-lich/dat-lich-cham-soc-rang-mieng",
   },
   {
     img: "/img/dentis/dichvu3.jpg",
     name: "Đặt lịch thẩm mỹ răng",
     title:
       "Tại Dental Clinic, mọi quy trình đều đảm bảo theo tiêu chuẩn quốc tế, từ thăm khám, tư vấn đến phác đồ điều trị.",
-    link: "/dat-lich/khach-san-thu-cung",
+    link: "/dat-lich/dat-lich-tham-my-rang",
   },
 ];
 const listArticle = [
