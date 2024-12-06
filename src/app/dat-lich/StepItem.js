@@ -29,8 +29,8 @@ dayjs.extend(customParseFormat);
 
 export default function StepItem({ step, changeCurrent, loginUser }) {
   const [currentBooking, setCurrentBooking] = useState(null);
-  const [userName, setUserName] = useState("");
-  const [userPhone, setUserPhone] = useState("");
+  const [userName, setUserName] = useState("Nguyen Van A");
+  const [userPhone, setUserPhone] = useState("0323456789");
   const [userEmail, setUserEmail] = useState("");
   const [userDay, setUserDay] = useState("");
   const [userTime, setUserTime] = useState("");
@@ -193,18 +193,11 @@ export default function StepItem({ step, changeCurrent, loginUser }) {
   };
   const getService = (value) => {
     const services = {
-      1: "Khám tổng quát răng miệng",
-      2: "Điều trị sâu răng",
-      3: "Viêm nha chu",
-      4: "Trám răng",
-      5: "Tẩy trắng răng",
-      6: "Lấy cao răng",
-      7: "Dán sứ venner",
-      8: "Bọc răng sứ ceramill",
-      9: "Niềng răng mắc cài",
-      10: "Trồng răng Implant",
+      1: "Thăm khám răng",
+      2: "Chăm sóc răng",
+      3: "Thẩm mỹ răng",
     };
-    return services[value] || "Khám tổng quát răng miệng";
+    return services[value] || "Thăm khám răng";
   };
 
   const formRef = useRef();
@@ -268,43 +261,15 @@ export default function StepItem({ step, changeCurrent, loginUser }) {
               options={[
                 {
                   value: "1",
-                  label: "Khám tổng quát răng miệng",
+                  label: "Thăm khám răng",
                 },
                 {
                   value: "2",
-                  label: "Điều trị sâu răng",
+                  label: "Chăm sóc răng",
                 },
                 {
                   value: "3",
-                  label: "Viêm nha chu",
-                },
-                {
-                  value: "4",
-                  label: "Trám răng",
-                },
-                {
-                  value: "5",
-                  label: "Tẩy trắng răng",
-                },
-                {
-                  value: "6",
-                  label: "Lấy cao răng",
-                },
-                {
-                  value: "7",
-                  label: "Dán sứ venner",
-                },
-                {
-                  value: "8",
-                  label: "Bọc răng sứ ceramill",
-                },
-                {
-                  value: "9",
-                  label: "Niềng răng mắc cài",
-                },
-                {
-                  value: "10",
-                  label: "Trồng răng Implant",
+                  label: "Thẩm mỹ răng",
                 },
               ]}
             />

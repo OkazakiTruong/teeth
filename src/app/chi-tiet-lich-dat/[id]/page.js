@@ -99,18 +99,11 @@ export default function Page({ params }) {
 
   const getService = (value) => {
     const services = {
-      1: "Khám tổng quát răng miệng",
-      2: "Điều trị sâu răng",
-      3: "Viêm nha chu",
-      4: "Trám răng",
-      5: "Tẩy trắng răng",
-      6: "Lấy cao răng",
-      7: "Dán sứ venner",
-      8: "Bọc răng sứ ceramill",
-      9: "Niềng răng mắc cài",
-      10: "Trồng răng Implant",
+      1: "Thăm khám răng",
+      2: "Chăm sóc răng",
+      3: "Thẩm mỹ răng",
     };
-    return services[value] || "Khám tổng quát răng miệng";
+    return services[value] || "Thăm khám răng";
   };
 
   return (

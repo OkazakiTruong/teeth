@@ -91,18 +91,18 @@ main {
       cursor: pointer;
     }
     .prev-btn {
-      border: 1px solid $BROWN_500;
-      color: $BROWN_500;
+      border: 1px solid $BROWN_900;
+      color: $BROWN_900;
       &:hover {
-        background-color: $BROWN_500;
+        background-color: $BROWN_900;
         color: white;
       }
     }
     .next-btn {
-      background-color: $BROWN_500;
+      background-color: $BROWN_900;
       color: white;
       &:hover {
-        background-color: $RED_500;
+        background-color: $BROWN_600;
       }
     }
   }

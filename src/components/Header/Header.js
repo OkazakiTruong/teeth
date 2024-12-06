@@ -81,7 +81,6 @@ export const Header = () => {
                   }}
                 >
                   <img src="/icon/Bell_ic.svg" alt="" />
-                  <div className={`number-bell`}>{loginUser?.noti.length}</div>
                   <div
                     className={`overlay  ${bellActive ? "overlay-active" : ""}`}
                     onClick={(e) => {
@@ -97,14 +96,6 @@ export const Header = () => {
                   >
                     <h3>Thông báo</h3>
                     <div className="container">
-                      {loginUser?.noti.map((noti, index) => {
-                        return (
-                          <a href={noti.link} className="menu-item" key={index}>
-                            <span className="content">{noti.content}</span>
-                            <span className="time">{noti.date}</span>
-                          </a>
-                        );
-                      })}
                     </div>
                   </div>
                 </div>
