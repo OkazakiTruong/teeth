@@ -77,8 +77,8 @@ export default function Page() {
         <div className="img">
           <div className="overlay"></div>
           <div className="content">
-            <img src="/img/logo_am_ban.svg" alt="" />
-            <h3>{"CHỮA LÀNH TỪ TRÁI TIM"}</h3>
+            <img src="/img/logo_am_ban.png" alt="" />
+            <h3>{"TOẢ SÁNG NỤ CƯỜI VIỆT"}</h3>
           </div>
         </div>
         <div className="form-wrapper">

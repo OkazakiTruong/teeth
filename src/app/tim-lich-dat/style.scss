@@ -11,11 +11,10 @@ form {
     height: 51px;
     padding: 0px 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #808080;
     margin-top: 8px;
     &:focus {
-      border: 1px solid $BROWN_500;
-      box-shadow: 0 0 8px 4px rgba(145, 26, 30, 0.25);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
   }
   button {
@@ -23,17 +22,17 @@ form {
     height: 53px;
     border: none;
     border-radius: 10px;
-    background-color: $BROWN_500;
+    background-color: $BROWN_900;
     margin-top: 40px;
     color: white;
     font-weight: bold;
     cursor: pointer;
     &:hover {
-      background-color: $RED_600;
+      background-color: $BROWN_500;
     }
   }
   .error {
     margin-top: 8px;
-    color: $RED_600;
+    color: red;
   }
 }

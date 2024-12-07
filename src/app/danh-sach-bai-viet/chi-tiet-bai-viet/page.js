@@ -53,7 +53,7 @@ export default function page() {
       <div className="article-section">
         <div className="article-section-left">
           <h1 className="article-title">
-            Bật mí cho bạn cách chăm sóc mèo con chu đáo nhất
+          Hàn răng bao lâu thì được ăn & 4 lưu ý để tăng độ bền của vết trám
           </h1>
           <div className="article-author-time">
             <div className="article-item">
@@ -72,10 +72,7 @@ export default function page() {
                 MỤC LỤC BÀI VIẾT
               </p>
             </div>
-            <p style={{ fontWeight: "500", margin: "20px 0" }}>
-              Cách chăm sóc mèo con chu đáo nhất cho người nuôi
-            </p>
-            <ul style={{ listStyle: "inside" }}>
+            <ul style={{ listStyle: "inside",margin: "20px 0" }}>
               <li>
                 <a href="#title-1">Hàn răng bao lâu thì được ăn?</a>
               </li>

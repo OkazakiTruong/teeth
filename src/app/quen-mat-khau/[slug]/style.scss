@@ -17,7 +17,7 @@ main {
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.25);
   .img {
     width: 676px;
-    background-image: url("/img/bg-login.jpg");
+    background-image: url("/img/bg-login.png");
     background-size: cover;
     border-radius: 10px;
     position: relative;
@@ -69,19 +69,19 @@ main {
     }
     input {
       height: 55px;
-      border: 1px solid black;
+      border: 1px solid #808080;
       border-radius: 10px;
       font-size: 16px;
       padding: 0px 20px;
       &:focus {
-        border: 1px solid $BROWN_500;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
     }
     input[type="password"] {
       padding-right: 40px;
     }
     .input-err {
-      border-color: $RED_500;
+      border-color: red;
     }
     .error {
       font-size: 14px;

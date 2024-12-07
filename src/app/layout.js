@@ -30,7 +30,6 @@ export default function RootLayout({ children }) {
                 itemBg: "transparent",
                 subMenuItemBg: "transparent",
                 activeBarBorderWidth: 0,
-                itemSelectedBg: "rgba(145, 26, 29, 0.05)",
                 itemBorderRadius: 0,
               },
             },

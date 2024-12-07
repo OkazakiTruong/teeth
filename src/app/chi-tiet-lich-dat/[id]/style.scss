@@ -88,19 +88,19 @@ hr {
   }
   .btn-type-1 {
     color: white;
-    background-color: $BROWN_500;
+    background-color: $BROWN_900;
     &:hover {
-      background-color: $RED_600;
+      background-color: $BROWN_500;
       cursor: pointer;
     }
   }
   .btn-type-2 {
-    color: $BROWN_500;
-    border: 1px solid $BROWN_500;
+    color: $BROWN_900;
+    border: 1px solid $BROWN_900;
     background-color: transparent;
     cursor: pointer;
     &:hover {
-      background-color: $BROWN_500;
+      background-color: $BROWN_900;
       color: white;
     }
   }
@@ -113,11 +113,10 @@ hr {
       width: 100%;
       height: 51px;
       padding: 0px 10px;
-      border: 1px solid black;
+      border: 1px solid #808080;
       border-radius: 10px;
       &:focus {
-        box-shadow: 0 0 8px 4px rgba(145, 26, 30, 0.25);
-        border: 1px solid $BROWN_500;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -126,6 +125,6 @@ hr {
     justify-content: space-between;
   }
   .err {
-    color: $RED_600;
+    color: red;
   }
 }

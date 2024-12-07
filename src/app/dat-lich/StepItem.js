@@ -393,36 +393,38 @@ export default function StepItem({ step, changeCurrent, loginUser }) {
           <div className="table-wrapper">
             <div className="table">
               <div className="table-row table-row--brown">
-                <div className="table-col">Loại lịch hẹn</div>
-                <div className="table-col">LỊCH KHÁM</div>
+                <div className="table-col">Mã lịch hẹn</div>
+                <div className="table-col">fc11ccdbe808</div>
+              </div>
+              <div className="table-row">
+              <div className="table-col">Loại lịch hẹn</div>
+              <div className="table-col">CHĂM SÓC RĂNG</div>
+              </div>
+              <div className="table-row table-row--brown">
+                <div className="table-col">Trạng thái</div>
+                <div className="table-col">Chờ khám</div>
               </div>
               <div className="table-row">
                 <div className="table-col">Ngày đặt</div>
-                <div className="table-col">{currentBooking.date}</div>
+                <div className="table-col">19/11/2024</div>
               </div>
               <div className="table-row table-row--brown">
                 <div className="table-col">Giờ đặt</div>
-                <div className="table-col">{currentBooking.time}</div>
-              </div>
-              <div className="table-row">
-                <div className="table-col">Loại dịch vụ</div>
-                <div className="table-col">
-                  {getService(`${currentBooking.service}`)}
-                </div>
+                <div className="table-col">9:00 - 10:00</div>
               </div>
             </div>
             <div className="table">
               <div className="table-row table-row--brown">
                 <div className="table-col">Họ và tên</div>
-                <div className="table-col">{currentBooking.userName}</div>
+                <div className="table-col">Đặng Thị Minh Thanh</div>
               </div>
               <div className="table-row">
                 <div className="table-col">Số điện thoại</div>
-                <div className="table-col">{currentBooking.userPhone}</div>
+                <div className="table-col">0977354956</div>
               </div>
               <div className="table-row table-row--brown">
                 <div className="table-col">Email</div>
-                <div className="table-col">{currentBooking.userEmail}</div>
+                <div className="table-col">minhthanh@gmail.com</div>
               </div>
             </div>
           </div>

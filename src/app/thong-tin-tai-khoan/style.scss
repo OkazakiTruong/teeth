@@ -28,7 +28,8 @@ main {
     }
   }
   .ant-menu-item-selected {
-    border-right: 4px solid brown;
+    border-right: 4px solid $BROWN_500;
+    font-weight: 600;
   }
   .section-right {
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.25);
@@ -68,11 +69,10 @@ main {
         display: flex;
         align-items: center;
         padding: 10px;
-        border: 1px solid black;
+        border: 1px solid #808080;
         border-radius: 10px;
         &:focus {
-          border: 1px solid $BROWN_500;
-          box-shadow: 0 0 8px 4px rgba(145, 26, 30, 0.25);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
       }
     }
